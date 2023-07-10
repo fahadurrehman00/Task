@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chatting App</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="Style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!--=========NavBar==========-->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#"><img src="Assets/logo.png" alt="" /></a>
+      <div class="menu-toggle">
+        <span class="menu-icon"><i class="fas fa-bars"></i></span>
+        <span class="menu-title">Menu</span>
+      </div>
+      <form class="navbar-form">
+        <i class="fa fa-search search-icon"></i>
+        <input
+          class="form-control"
+          type="text"
+          id="searchInput"
+          placeholder="Search" />
+      </form>
+      <div class="navbar-nav m-menu">
+        <a class="nav-link" href="#">Location</a>
+        <a class="nav-link" href="#">Services</a>
+        <a class="nav-link" href="#">My Booking</a>
+        <div class="m-btn">
+          <button class="btn main-btn mr-2">Login/Register</button>
+          <button class="btn btn-join">Join Now</button>
+        </div>
+      </div>
+    </nav>
+    <!--===========End NavBar==============-->
+    <hr />
+    <!--==============Main Section=========-->
+    <div class="container">
+      <div class="row">
+        <!---============Left Side Menu============-->
+        <div class="col-md-3">
+          <div class="profile">
+            <img
+              class="profile-pic"
+              src="Assets/profile-pic.jpg"
+              alt="Profile Picture" />
+            <div class="profile-name">Brainn O'coner</div>
+            <button class="edit-profile-btn main-btn">Edit Profile</button>
+          </div>
+          <div class="side-menu about-app">
+            <h4>General</h4>
+            <div class="menu-item">
+              <i class="fa fa-moon"></i>
+              <span>Dark Mode</span>
+              <div class="custom-control custom-switch">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="customSwitch1"
+                  checked />
+                <label class="custom-control-label" for="customSwitch1"></label>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <i class="fa fa-question-circle"></i>
+              <span>Help Center</span>
+              <i class="fa fa-chevron-right arrow-icon"></i>
+            </div>
+            <div class="menu-item">
+              <i class="fa fa-language"></i>
+              <span>App Language</span>
+              <i class="fa fa-chevron-right arrow-icon"></i>
+            </div>
+            <div class="menu-item">
+              <i class="fa fa-heart"></i>
+              <span>Favourite Services</span>
+              <i class="fa fa-chevron-right arrow-icon"></i>
+            </div>
+            <div class="menu-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Address</span>
+              <i class="fa fa-chevron-right arrow-icon"></i>
+            </div>
+            <div class="menu-item">
+              <i class="fa fa-life-ring"></i>
+              <span>Support & live chat</span>
+              <i class="fa fa-chevron-right arrow-icon"></i>
+            </div>
+            <h4>About App</h4>
+            <div class="menu-item">
+              <i class="fa fa-lock"></i>
+              <span>Privacy Policy</span>
+              <i class="fa fa-chevron-right arrow-icon"></i>
+            </div>
+            <div class="menu-item">
+              <i class="fas fa-file-alt"></i>
+              <span>Terms & Conditions</span>
+              <i class="fa fa-chevron-right arrow-icon"></i>
+            </div>
+            <div class="menu-item">
+              <i class="fa fa-gavel"></i>
+              <span>Legal Notices</span>
+              <i class="fa fa-chevron-right arrow-icon"></i>
+            </div>
+            <div class="menu-item">
+              <i class="fa fa-info-circle"></i>
+              <span>About</span>
+              <i class="fa fa-chevron-right arrow-icon"></i>
+            </div>
+            <div class="menu-item">
+              <i class="fa fa-star"></i>
+              <span>Rate Us</span>
+              <i class="fa fa-chevron-right arrow-icon"></i>
+            </div>
+            <button class="logout-btn main-btn">Logout</button>
+          </div>
+        </div>
+        <!--=========Chat Section==========-->
+        <div class="col-md-9 mt-4 content-area">
+          <div class="row">
+            <div class="col-md-4 conversations">
+              <!-- ========= left side ========== -->
+              <div class="left-side">
+                <div class="search-chat">
+                  <i class="fa fa-search search-icon"></i>
+                  <input type="text" placeholder="Search " />
+                </div>
+
+                <div class="chat-list">
+                  <div class="chat active">
+                    <div class="imgBx">
+                      <img src="Assets/img1.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <div class="head">
+                        <h4 class="name">Muhammed Ali</h4>
+                        <span class="time">10:57</span>
+                      </div>
+                      <div class="msgs">
+                        <p class="msg">How to Make html and css only</p>
+                        <b class="num"></b>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat">
+                    <div class="imgBx">
+                      <img src="Assets/img2.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <div class="head">
+                        <h4 class="name">Ahmed Samy</h4>
+                        <span class="time">09:25</span>
+                      </div>
+                      <div class="msgs">
+                        <p class="msg">Hi, there i'm</p>
+                        <b class="num unread">1</b>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat">
+                    <div class="imgBx">
+                      <img src="Assets/img3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <div class="head">
+                        <h4 class="name">Emad Sameer</h4>
+                        <span class="time">09:25</span>
+                      </div>
+                      <div class="msgs">
+                        <p class="msg">
+                          Hi, i found you on youtube also i found you on
+                          facebook
+                        </p>
+                        <b class="num unread">3</b>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat">
+                    <div class="imgBx">
+                      <img src="Assets/img4.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <div class="head">
+                        <h4 class="name">Mazen Ashraf</h4>
+                        <span class="time">09:25</span>
+                      </div>
+                      <div class="msgs">
+                        <p class="msg">Hi, i found you on</p>
+                        <b class="num unread">2</b>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat">
+                    <div class="imgBx">
+                      <img src="Assets/img5.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <div class="head">
+                        <h4 class="name">Amr Shaheen</h4>
+                        <span class="time">05:25</span>
+                      </div>
+                      <div class="msgs">
+                        <p class="msg">Hi, i found you on youtube</p>
+                        <b class="num"></b>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat">
+                    <div class="imgBx">
+                      <img src="Assets/img5.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <div class="head">
+                        <h4 class="name">Amr Shaheen</h4>
+                        <span class="time">05:25</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat">
+                    <div class="imgBx">
+                      <img src="Assets/img5.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                      <div class="head">
+                        <h4 class="name">Amr Shaheen</h4>
+                        <span class="time">05:25</span>
+                      </div>
+                      <div class="msgs">
+                        <p class="msg">Hi, i found you on youtube</p>
+                        <b class="num"></b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 inbox">
+              <!-- ========= right side ========== -->
+              <div class="right-side">
+                <div class="header">
+                  <div class="user-details">
+                    <div class="back-arrow">
+                      <i class="fa fa-chevron-left arrow-icon"></i>
+                    </div>
+                    <div class="user-imgBx">
+                      <img src="Assets/img1.jpg" alt="" />
+                    </div>
+                    <h4>
+                      Muhammed Ali <br />
+                      <span></span>
+                    </h4>
+                  </div>
+                  <ul class="nav-icons">
+                    <li>
+                      <ion-icon name="ellipsis-vertical"></ion-icon>
+                    </li>
+                  </ul>
+                </div>
+                <div class="inbx">
+                  <div class="chatBx">
+                    <div class="msg msg-frnd">
+                      <p>
+                        Hello Sir! <br />
+                        <span>12:15</span>
+                      </p>
+                    </div>
+                    <!-- repeat 8X  -->
+                    <div class="msg msg-me">
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur elit. Delectus,
+                        tempora. <br />
+                        <span>12:15</span>
+                      </p>
+                    </div>
+                    <div class="msg msg-frnd">
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
+                        <br />
+                        <span>12:15</span>
+                      </p>
+                    </div>
+                    <div class="msg msg-me">
+                      <p>
+                        Lovoluptatem
+                        <br />
+                        <span>12:15</span>
+                      </p>
+                    </div>
+                    <div class="msg msg-me">
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur elit. Delectus,
+                        tempora. <br />
+                        <span>12:15</span>
+                      </p>
+                    </div>
+                    <div class="msg msg-me">
+                      <p>
+                        Lovoluptatem
+                        <br />
+                        <span>12:15</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="chat-input">
+                    <input type="text" placeholder="Write a Message" />
+                    <button><i class="fa fa-paper-plane"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--=========JavaScript Link=========-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".menu-toggle").click(function () {
+          $(".navbar-nav").toggleClass("show");
+        });
+      });
+      // Get the search input element
+      const searchInput = document.getElementById("searchInput");
+
+      // Check if jQuery is available
+      if (typeof jQuery !== "undefined") {
+        // Use jQuery code
+        $(searchInput).on("input", function () {
+          const searchTerm = $(this).val().toLowerCase();
+          $(".item").each(function () {
+            const itemName = $(this).text().toLowerCase();
+            if (itemName.includes(searchTerm)) {
+              $(this).show();
+            } else {
+              $(this).hide();
+            }
+          });
+        });
+      } else {
+        // Use pure JavaScript code
+        searchInput.addEventListener("input", function () {
+          const searchTerm = searchInput.value.toLowerCase();
+          const items = document.getElementsByClassName("item");
+          for (let i = 0; i < items.length; i++) {
+            const item = items[i];
+            const itemName = item.textContent.toLowerCase();
+            if (itemName.includes(searchTerm)) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
